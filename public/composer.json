@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twig/twig": "^2.0",
+        "phpoffice/phpspreadsheet": "^1.5"
+    }
+}

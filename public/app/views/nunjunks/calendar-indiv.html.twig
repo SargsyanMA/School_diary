@@ -1,0 +1,36 @@
+<div class="form-group">
+    <textarea class="form-control edit-content" name="text">{{ homework.text }}</textarea>
+</div>
+<div class="form-group">
+    <label>Ученики:</label><br/>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="child" class="js-child" {% if child == 0 %}checked{%endif%} value="0">
+            <span>Весь класс</span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="child" class="js-child"  {% if child == 1 %}checked{%endif%} value="1">
+            <span>Индивидуально</span>
+        </label>
+    </div>
+    <div class="js-students {% if child == 0 %}hidden{%endif%}">
+        <hr class="all-class-hr"/>
+        {% for item in students %}
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="student[]" {% if item.id in homework.studentsIds %}checked{%endif%} value="{{ item.id }}" >
+                    {{ item.name }}
+                </label>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<input type="hidden" name="lessonNum" value="{{ lesson_num }}" />
+<input type="hidden" name="lessonId" value="{{ lesson_id }}" />
+<input type="hidden" name="date" value="{{ date }}" />
+<input type="hidden" name="grade" value="{{ grade_id }}" />
+<input type="hidden" name="id" value="{{ homework.id }}" />
+<input type="hidden" name="action" value="setHomework" />

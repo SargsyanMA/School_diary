@@ -1,0 +1,42 @@
+{% for childId, child in children %}
+    <div class="col-md-3">
+        <div class="form-group">
+            <label class="col-sm-12 control-label">ФИО ребенка</label>
+            <div class="col-sm-12"><input type="text" class="form-control" name="childName[{{ child.id }}]" value="{{ child.name }}"></div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-12 control-label">Телефон ребенка</label>
+            <div class="col-sm-12"><input type="text" class="form-control" name="childPhone[{{ child.id }}]" value="{{ child.phone }}"></div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-12 control-label">Дата рождения ребенка</label>
+            <div class="col-sm-12"><input type="text" class="form-control datetimepicker" name="childBirthDate[{{ child.id }}]" value="{{ child.birthDateFormatted }}"></div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-12 control-label">Класс</label>
+            <div class="col-sm-12">
+                <select class="form-control m-b input-sm" name="grade[{{ child.id }}]">
+                    <option value="">Все</option>
+                    {% for key, grade in grades %}
+                        <option value="{{ grade.id }}" {% if grade.id == child.grade %} selected {% endif %}>{{ grade.number }}{{ grade.letter }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group"><label class="col-sm-12 control-label">Родство</label>
+            <div class="col-sm-12"><input type="text" class="form-control" name="relation[{{ child.id }}]" value="{{ child.relation }}"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-1"><input type="checkbox" class="checkbox" name="childDelete[{{ child.id }}]" value="1"></div>
+            <label class="col-sm-11 control-label">Удалить</label>
+
+        </div>
+
+        <input type="hidden" name="childId[{{ child.id }}]" value="{{ child.id }}" />
+
+    </div>
+{% endfor %}

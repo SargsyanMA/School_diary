@@ -1,0 +1,69 @@
+[2019-08-13 17:36:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Class 'Maatwebs...', Array)
+#4 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/index.php(57): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-08-13 17:36:37] laravel.ERROR: Class 'Maatwebsite\Excel\Excel' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Maatwebsite\\Excel\\Excel' not found at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/config/excel.php:91)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/index.php(57): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2019-08-13 17:44:30] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Class 'Maatwebs...', Array)
+#4 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/index.php(57): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-08-13 17:44:30] laravel.ERROR: Class 'Maatwebsite\Excel\Excel' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Maatwebsite\\Excel\\Excel' not found at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/config/excel.php:91)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/index.php(57): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 
+[2019-08-13 18:05:13] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:168)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(102): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(90): Illuminate\\Log\\LogManager->get(NULL)
+#2 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(500): Illuminate\\Log\\LogManager->driver()
+#3 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(114): Illuminate\\Log\\LogManager->error('Class 'Maatwebs...', Array)
+#4 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(314): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(122): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#7 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/index.php(57): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 {main}
+"} 
+[2019-08-13 18:05:13] laravel.ERROR: Class 'Maatwebsite\Excel\Excel' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Maatwebsite\\Excel\\Excel' not found at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/config/excel.php:91)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require()
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/index.php(57): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 {main}
+"} 

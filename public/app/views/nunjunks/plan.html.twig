@@ -1,0 +1,42 @@
+<div class="form-group">
+ <input type="hidden" id="lesson_plan_id" value='{{ plan.id }}'>
+ <label>Предмет</label>
+ <select name="lesson_id" class="form-control" required>
+  <option value="">Выберите предмет</option>
+     {% for lesson in lessons %}
+      <option value="{{ lesson.id }}" {% if plan.lesson_id and lesson.id == plan.lesson_id %}selected{% endif %}>{{ lesson.name }}</option>
+     {% endfor %}
+ </select>
+</div>
+
+<div class="form-group">
+ <label for="grade_num">Параллель</label>
+ <select name="grade_num" class="form-control" required>
+  <option value="">Выберите параллель</option>
+     {% for grade in grades %}
+      <option value="{{ grade.number }}" {% if plan.grade_num and grade.number == plan.grade_num %}selected{% endif %}>{{ grade.number }}</option>
+     {% endfor %}
+ </select>
+</div>
+
+<div class="form-group">
+ <label>Класс/группа</label>
+ <select name="group_id" class="form-control" required>
+  <option value="">Нет</option>
+  {% for key, name in groups %}
+    <option value="{{ key }}" {% if plan.group_id and plan.group_id == key %}selected{% endif %}>{{ name }}</option>
+  {% endfor %}
+ </select>
+</div>
+
+<div class="form-group">
+ <label for="title">Название</label>
+ <input type="text" class="form-control" name="title" value="{% if plan.title %}{{plan.title}}{% endif %}" />
+</div>
+
+<div class="form-group">
+ <label for="lesson_num">Номер урока</label>
+ <input type="text" class="form-control" name="lesson_num" value="{% if plan.lesson_num %}{{plan.lesson_num}}{% endif %}" />
+</div>
+
+

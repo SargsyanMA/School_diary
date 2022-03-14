@@ -1,0 +1,20 @@
+
+    <td>
+        <input type="hidden" name="id" value="{{ id }}">
+        {{ id }}
+    </td>
+    <td><input name="name" value="{{ name }}"  class="form-control"/></td>
+    <td>
+        <select name="type" class="form-control">
+            <option value="general" {% if type=='general' %} selected {% endif %}>Основное образование</option>
+            <option value="additional" {% if type=='additional' %} selected {% endif %}>Дополнительное образование</option>
+            <option value="individual" {% if type=='individual' %} selected {% endif %}>Индивидуальные занятия</option>
+            <option value="psylog" {% if type=='psylog' %} selected {% endif %}>Психолог/логопед</option>
+            <option value="childgarden" {% if type=='childgarden' %} selected {% endif %}>Детский сад</option>
+            <option value="zhome" {% if type=='zhome' %} selected {% endif %}>Уход домой</option>
+        </select>
+    </td>
+    <td>
+        <button class="btn btn-success" type="submit">Сохранить</button>
+        <button class="btn btn-default lesson-edit-cancel" type="button" data-lesson-id="{{ id }}" >Отменить</button>
+    </td>

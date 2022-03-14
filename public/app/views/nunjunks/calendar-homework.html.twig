@@ -1,0 +1,25 @@
+{% for hw in homework %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {% if hw.child == 0 %}
+                Весь класс
+            {% else %}
+                {% for student in hw.students %}
+                    {{ student.name }}
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="panel-body">
+            {{ hw.text | safe}}
+        </div>
+        <div class="text-right" style="padding: 3px;"><small>{{hw.tms}}</small></div>
+        {% if can_edit %}
+            <div class="panel-footer">
+                <a href="#edit" class="js-edit" data-id="{{ hw.id }}"><i class="fa fa-pencil"></i> редактировать</a>
+                <a href="#delete" class="js-delete pull-right text-danger" data-id="{{ hw.id }}"><i class="fa fa-times"></i> удалить</a>
+            </div>
+        {% endif %}
+
+    </div>
+
+{% endfor %}

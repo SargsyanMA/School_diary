@@ -1,0 +1,50 @@
+[2019-11-03 23:16:03] local.ERROR: No Database connection yet in VoyagerServiceProvider loadAuth()  
+[2019-11-03 23:19:43] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2019-11-03 23:19:49] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2019-11-03 23:19:54] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2019-11-03 23:20:00] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2019-11-03 23:20:03] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2019-11-03 23:20:09] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2019-11-03 23:20:14] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 

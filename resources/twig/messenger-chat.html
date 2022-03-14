@@ -1,0 +1,14 @@
+{% for message in messages %}
+    <div class="chat-message {% if message.my==1 %}right{% else %}left{% endif %} " data-message-id="{{ message.id }}">
+        <div class="message-avatar center-cropped hidden-sm hidden-xs" style="background-image: url('{{ message.authorPhoto | default('/img/blue-user-icon.png',true) }}');"></div>
+        <div class="message {% if message.my==1 %}my-message{% endif %}">
+            <a class="message-author" href="#"> {{ message.authorName }}  {% if message.my==1 %}<i class="fa fa-check text-success viewed {% if message.viewed!=1 %}hidden{% endif %}"></i>{% endif %}</a>
+            <span class="message-date"><span class="hidden-sm hidden-xs"> {{ message.tms }} </span></span>
+            <span class="message-content">
+                {{ message.text | safe }}
+            </span>
+        </div>
+    </div>
+{% else %}
+    <h2>Нет сообщений</h2>
+{% endfor %}

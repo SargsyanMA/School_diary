@@ -1,0 +1,34 @@
+{% for event in events %}
+<div class="panel panel-default">
+    <div class="panel-body">
+    <div class="feed-element social-feed-box" id="event-{{ event.id }}">
+        <div class="media-body ">
+            {% if event.canEdit %}
+                <div class="pull-right">
+                    <button class="btn btn-xs btn-outline btn-warning edit" data-id="{{ event.id }}"><i class="fa fa-pencil"></i></button>
+                    <button class="btn btn-xs btn-outline btn-danger delete" data-id="{{ event.id }}"><i class="fa fa-times"></i></button>
+                </div>
+                <span>Автор: {{ event.userName }}</span>
+            {% endif %}
+
+            <h4><span class="date">
+                {{ event.date|safe }}
+                {% if event.date2 %}
+                     - {{ event.date2|safe }}
+                {%endif%}
+            </span></h4>
+            <h2 class="{%if event.expired==1 %}text-muted{% endif %}">{{ event.title }}</h2>
+            <div class="event-text">
+                {{ event.text|safe }}
+            </div>
+        </div>
+        <hr/>
+        <div class="comments">
+            {% include 'event-comments.html' %}
+        </div>
+    </div>
+        </div>
+    </div>
+{% else %}
+    <h5>Нет событий</h5>
+{% endfor %}

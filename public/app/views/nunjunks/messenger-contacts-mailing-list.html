@@ -1,0 +1,38 @@
+{% for groupId,group in contacts %}
+    <div class="chat-group" >
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" class="select-group" data-group-id="{{ groupId }}" >
+                <a data-toggle="collapse" href="#mailing-{{ groupId }}" aria-expanded="false" aria-controls="mailing-{{ groupId }}" data-id="mailing-{{ groupId }}" >
+                    <span>{{ group.title }}</span>
+                </a>
+            </label>
+        </div>
+    </div>
+    <div class="chat-group-users collapse" id="mailing-{{ groupId }}">
+        {% for id, user in group.users %}
+            <div class="chat-user">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="group-{{ groupId }}" name="mailto[]" value="{{ user.id }}" >
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="chat-avatar center-cropped" style="background-image: url('{{ user.photo | default('/img/blue-user-icon.png',true) }}');"></div>
+                        <div class="chat-user-name">
+                            <a href="#" data-id="{{ user.id }}" data-group-id="{{ groupId }}" id="user-{{ user.id }}"><strong>{{ user.name }}</strong>
+                                {% if user.childName%}<br/><small class="text-muted"><strong>Ребенок:</strong> {{ user.childName|safe }}</small>{% endif %}
+                                {% if user.role!=0 and user.role%}<br/><small class="text-muted">{{ user.role }}</small>{% endif %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <h5>Нет контактов</h5>
+        {% endfor %}
+    </div>
+{% endfor %}

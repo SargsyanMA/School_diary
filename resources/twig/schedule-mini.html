@@ -1,0 +1,37 @@
+<table class="table schedule-mini table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th>#</th>
+        {%for dayName in schedule.weekDays %}
+            <th>{{ dayName }}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+    <tbody>
+    {%for lessonNum,lessons in schedule.lessons %}
+        <tr>
+            <th>
+                <span class="lesson-num">{{ lessonDict[lessonNum-1].name|safe }}</span><br/>
+                <span class="lesson-time">{{ lessonDict[lessonNum-1].time[0] }} - {{ lessonDict[lessonNum-1].time[1] }}</span>
+            </th>
+            {%for dayNum,lesson in lessons %}
+                <td class="weekday">
+                    {%for lsn in lesson.lessons %}
+                        <div class="data">
+                            <div class="lesson">{{ lsn.lessonName }}</div>
+                            <div class="teacher">{{ lsn.teacherName }}</div>
+                            {#
+                            {% if lsn.student!='' %}
+                                <div class="student">
+                                    {{ lsn.student }} <span class="badge badge-warning">ИНД.</span>
+                                </div>
+                            {% endif %}
+                            #}
+                        </div>
+                    {% endfor %}
+                </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

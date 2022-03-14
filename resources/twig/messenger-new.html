@@ -1,0 +1,35 @@
+<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+    <i class="fa fa-envelope"></i>
+    {% if count>0 %}
+        <span class="label label-success">{{ count }}</span>
+    {% endif %}
+</a>
+<ul class="dropdown-menu dropdown-messages">
+{% for message in messages %}
+    <li>
+        <div class="dropdown-messages-box">
+            <a href="#a" class="pull-left">
+                <div class="center-cropped" style="background-image: url('{{ message.authorPhoto | default('/img/blue-user-icon.png',true) }}');"></div>
+            </a>
+
+            <div class="media-body">
+                <strong>{{ message.authorName }}:</strong>
+                <small class="pull-right">{{ message.tms }}</small>
+                <p><a href="/messanger/?userid={{ message.author }}">{{ message.text }}</a></p>
+            </div>
+        </div>
+    </li>
+    <li class="divider"></li>
+{% else %}
+    <h5>Нет новых сообщений</h5>
+{% endfor %}
+
+<li>
+    <div class="text-center link-block">
+        <a href="/messanger/">
+            <i class="fa fa-envelope"></i> <strong>Читать все сообщения</strong>
+        </a>
+    </div>
+</li>
+
+</ul>

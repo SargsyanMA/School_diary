@@ -1,0 +1,89 @@
+<div
+        class="data
+               schedule-id-{{ id }}
+               {% if (not teacher or not lesson) and lessonType=='zhome' %} no-teacher{% endif %}
+               {% if not active %} past{% endif %}
+               {% if lessonType =='zhome' %} home{% endif %}
+               "
+        data-id="{{ id }}"
+        data-type="{{ type }}"
+        data-students="{{ studentsJson }}"
+        data-all-class="{{ allClass }}"
+
+        >
+    {% if can_edit %}
+        <div class="edit-buttons">
+            <button class="btn btn-xs btn-outline btn-warning edit"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-xs btn-outline btn-info copy"><i class="fa fa-files-o"></i></button>
+            <button class="btn btn-xs btn-outline btn-danger delete"><i class="fa fa-times"></i></button>
+        </div>
+    {% endif %}
+
+    <div class="lesson" data-lesson="{{ lesson }}">
+        {{ lessonName }}
+        {% if future %} (c {{ tms }}){% endif %}
+    </div>
+    <div class="teacher" data-teacher="{{ teacher }}">{{ teacherName }}</div>
+    {%if note %}
+        <div class="note"><i class="fa fa-exclamation-circle"></i> {{ note }}</div>
+    {% endif %}
+    {%if student %}
+        <div class="student" data-student="{{ student }}">
+            {{ student }} <span class="badge badge-warning">индив.</span>
+        </div>
+    {% endif %}
+    <div class="time hidden" data-tms="{{ tms }}" data-tms-end="{{ tms_end }}" >
+        <small>{{ tms }} - {{ tms_end }}</small>
+    </div>
+    {% if type=='individual' %}
+        <div class="student">
+            {% if students|length %}
+                {% for student in classStudents %}
+                    {% if student.bound %}
+                        {{ student.name }}{%if not loop.last %},{% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            <span class="badge badge-warning">ИНД.</span>
+        </div>
+    {% endif %}
+    {% if currentType=='class' or currentType=='teacher' %}
+        <span
+            class="student-count label label-{% if allClass==1 %}primary{% else %}{% if students|length %}info{% else %}danger{% endif %}{% endif %}"
+            data-toggle="popover"
+            data-trigger="hover"
+            data-placement="auto bottom"
+            data-html="true"
+            title="{{ lessonName }}"
+            data-content="
+                <p>
+                    <strong>Ученики</strong><br/>
+                    <small>
+                        {% if students|length %}
+                            {% for student in classStudents %}
+                                {% if student.bound %}
+                                    {{ student.name }}<br/>
+                                {% endif %}
+                            {% endfor %}
+                        {% elif allClass==1 %}
+                            {% for student in classStudents %}
+                                {{ student.name }}<br/>
+                            {% endfor %}
+                        {% else %}
+                            <strong class='text-muted'>Нет учеников</strong>';
+                        {% endif %}
+                    </small>
+                </p>
+                <p>
+                    <strong>Период активности</strong><br/>
+                    <small>с {{ tms }} по {{ tms_end }}</small>
+                </p>">
+            {% if allClass==1 %}
+                Весь класс
+            {% else %}
+                Учеников: {{ students|length }}
+            {% endif %}
+        </span>
+    {% endif %}
+    <small class="text-muted  lesson-id pull-right">{{ id }}</small>
+</div>

@@ -1,0 +1,49 @@
+[2020-02-18 19:37:35] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2020-02-18 19:37:42] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2020-02-18 19:37:43] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2020-02-18 19:37:45] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2020-02-18 19:37:49] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2020-02-18 19:37:54] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 
+[2020-02-18 19:37:59] local.ERROR: Call to a member function execute() on boolean {"userId":1,"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function execute() on boolean at /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/db.php:26)
+[stacktrace]
+#0 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/app/models/message.php(231): DB->getArray(' SELECT\
+       ...')
+#1 /var/www/vhosts/vps-theschool.host4g.ru/dev.theschool.ru/life/public/controllers/messenger.php(32): Message->getNewMessages()
+#2 {main}
+"} 

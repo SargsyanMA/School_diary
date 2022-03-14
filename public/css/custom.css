@@ -1,0 +1,288 @@
+.schedule .lesson {font-size: 14px; font-weight: bold;}
+.schedule .lesson-id {font-size: 10px; font-weight: normal; position: absolute; bottom:5px; right: 5px; }
+.schedule .teacher {font-size: 11px;}
+.student-count {font-size: 10px; margin: 5px 0; display: inline-block; cursor: pointer;}
+.schedule td .edit-buttons {float: right; display: none;}
+.schedule td .edit-buttons button {float: left; margin-left: 3px;}
+.schedule td .data {width: 100%; margin-bottom: 10px; position: relative;}
+.schedule td .data input,
+.schedule td .data select {width: 100%; }
+.schedule td .add,
+.schedule td .paste {float: right; margin-left: 3px; display: none; margin-top: 5px;}
+
+.schedule td .note {font-style: italic;}
+
+.schedule ol.students  {margin: 0 0 0 12px; padding: 0; font-size: 8px;}
+
+.schedule td:hover .edit-buttons {display: block;}
+.schedule td:hover .add,
+.schedule td:hover .paste {display: inline-block;}
+.schedule .weekday {  width: 19%;}
+.schedule .weekday select {  margin-bottom: 10px;}
+.schedule .lesson-num {font-weight: bold; display: block;  width: 125px;}
+.schedule .lesson-time {font-weight: normal; display: block;}
+.schedule .data {padding: 5px; }
+.schedule .data.past {padding: 5px; background: #eaeaea !important; color: #999;}
+.schedule .data:nth-child(2n+1) {background: rgba(0, 171, 255, 0.18);}
+.schedule .data:nth-child(2n) {background: rgba(0, 171, 255, 0.29);}
+
+.schedule td .data.no-teacher { background-color: #ffd8d5; }
+.schedule td .data.home { background-color: rgba(255, 196, 247, 0.54);  }
+.schedule-mini td .data {margin-bottom: 20px;}
+.schedule-mini td .data:last-child {margin-bottom: 0px;}
+.schedule-mini .lesson {font-size: 14px; font-weight: bold;}
+.schedule .student,
+.schedule-mini .student { font-weight: bold;}
+
+.schedule .popover { width: 300px}
+
+.form-horizontal .control-label {text-align: left;}
+
+.calendar th.lesson-number {  width: 125px;  }
+.calendar th.lesson-time {  width: 40px; }
+.calendar .day-header {font-size: 15px; background: #1c84c6; width: 100px; color: #fff !important; line-height: 28px !important;  }
+.calendar .day-header a {color: #fff !important;}
+.calendar .day-date {}
+
+.calendar td.lesson-time {width: 40px; white-space: normal !important; }
+.calendar .lesson-number {width: 50px; white-space: normal !important; font-weight: bold;}
+
+.calendar .teacher,
+.calendar .lesson {width: 150px; white-space: normal !important; }
+.calendar .editor {white-space: normal !important; }
+
+.calendar .teacher {}
+
+.calendar .student {font-size: 0.8em !important;}
+
+.calendar td {position: relative;}
+.calendar .tms { font-size: 10px; position: absolute; bottom: 5px; right: 5px;}
+
+.calendar .dont-forget {margin-top: 5px;}
+
+.calendar .editor .panel .panel-footer {display: none}
+.calendar .editor:hover .panel .panel-footer {display: block}
+
+.calendar-navigation {margin-bottom: 15px;}
+
+.table-hover>tbody>tr:hover {background: rgba(255, 254, 0, 0.19);  }
+
+.view-links .btn {margin-top: 15px;}
+.view-links {text-align: right;}
+
+.js-add { display: none; }
+
+.editor {}
+.editor:hover .js-add {display: block;}
+.note-editor { min-height:100px;}
+
+.event-text {font-size: 13px;}
+.event-date {font-size: 14px;}
+#event-add {background-color: rgb(255, 254, 212); padding: 20px;}
+
+.feed-activity-list {margin-top: 20px;}
+
+.feed-activity-list .feed-element {border: none;}
+.fc-day-grid-event > .fc-content {  white-space: normal !important;  }
+.week-highlight {background-color: rgba(181, 240, 255, 0.56);}
+.day-active {background-color: #ffa;}
+.fc-today {background-color: #ffafc7 !important;}
+
+.holiday { background: #c3ffbf !important; }
+
+.holiday .day-header { background-color: #19b200}
+
+iframe {border: none;}
+
+.media-body h4 .date { color: #ff607b;  font-size: 18px;  }
+.media-body h4 .date span {  color: #a7a7a7;  }
+.media-body h2 {  font-weight: bold;  }
+.media-body h2.text-muted { color: #afafaf;  }
+.chat-group > a {padding: 10px 20px; display: block;}
+.chat-group > a:hover {background-color: #f3f3f3;}
+.chat-discussion, .chat-users {height: 400px;}
+.center-cropped {  width: 40px;  height: 40px;  background-position: center center;  background-size: 100% auto;  background-repeat: no-repeat;  margin-top: 7px; }
+
+.day-events h3, .event-teaser {    width: 200px;  float: left;  margin-right: 20px;  font-size: 12px;  }
+.day-events h3 {  width: 120px;  font-size: 16px; }
+
+.message-input {  border: 2px #6bb9ff solid; }
+.event-teaser small{ font-size: 0.8em;}
+.elfinder-buttonset {float: none !important; margin-bottom: 0 !important;}
+.ui-icon-gripsmall-diagonal-se {position: inherit !important;}
+.logo-element img {width: 50px; height: auto;}
+.bootstrap-datetimepicker-widget .glyphicon-time,
+.bootstrap-datetimepicker-widget .glyphicon-calendar{font-size: 2em;}
+
+.loginColumns h2 span { color: #de1d3e; line-height: 1.3em;}
+.nav-header {  font-size: 15px;  }
+
+.page-heading h2 {  color: #de1d3e;  }
+
+.comments {margin-top: 15px;}
+.comment-text {font-size: 11px;}
+.comment-buttons {margin-top: 10px;}
+
+.event-errors {position: relative; top:-12px;}
+.show-archive {width: 100%; margin-top: 10px;}
+.form-control, .single-line {padding: 3px 12px;}
+.mobile-title {display: none !important;}
+.dropdown-menu .active {font-weight: bold;}
+
+.elfinder-upload-dropbox {height: 150px !important; padding-top: 65px !important; border: 2px dashed #aaa !important;}
+.elfinder-upload-dropbox:hover {border: 2px dashed #666 !important;}
+
+.elfinder-upload-dialog-wrapper .ui-button {width: 312px;}
+
+.bootstrap-filestyle {width: 200px;}
+.bootstrap-filestyle input {width: 200px !important;}
+
+.year-title {font-size: 18px; line-height: 36px; display: inline-block; margin: 10px 0 0 10px;}
+
+
+.editor .edit-content { margin-bottom: 10px;}
+.message-date {text-align: left;}
+.mobile-header {display: none;}
+
+.copyright {font-size: 10px;}
+
+
+.modal-schedule {min-width: 1100px !important;}
+
+.navbar.affix {top:0; position: fixed; z-index: 1000; width: 100%; background-color: #fff;}
+
+.calendar-nav > li {margin-left: 10px;}
+.all-class {font-size: 15px;  }
+.all-class-hr {margin: 0px;}
+
+.view-links .dropdown-menu {right: 0 !important; left: auto !important;}
+
+.my-message {background-color: rgb(241, 255, 234);  }
+
+@media print {
+    .schedule td {font-size: 10px; padding: 0 !important; border: 2px #333 solid !important;}
+    .schedule th {font-size: 10px; border: 2px #333 solid !important;}
+    .schedule .lesson {font-size: 11px; font-weight: bold; margin-bottom: 2px;}
+    .schedule .teacher {font-size: 8px;}
+    .schedule .student {font-size: 9px; margin-top: 4px; }
+    .schedule .lesson-num {font-weight: bold; display: block; width: auto; }
+    .schedule .lesson-time {font-weight: normal; display: block;}
+    .schedule .data {padding: 5px; border-bottom: 2px #333 dashed; margin: 0 !important; width: 100%; }
+    .schedule .data:last-child { border-bottom: none; }
+
+    .schedule .lesson-num-time {width: 10%;}
+
+    .badge {border: 1px #333 solid; font-size: 8px;}
+    h1 {font-size: 18px;}
+
+    .calendar .day-header {color: #000 !important; font-size: 13px;}
+    .calendar .day-events {text-indent: -1000em;}
+    #page-wrapper {margin: 0;}
+    .navbar-static-side {display: none;}
+
+    .calendar {page-break-inside: auto;}
+
+    .calendar td,
+    .calendar th {padding: 3px !important; font-size: 10px;}
+    .calendar tr {
+        page-break-inside: avoid;
+        break-after: auto;
+        page-break-after: auto;
+    }
+
+
+    .breadcrumb {display: none;}
+}
+
+
+@media screen and (min-width: 992px) {
+    .modal-lg {
+        width: 900px !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hidden-mobile {display: none !important;}
+    .mobile-header {display: block !important;}
+    .calendar table {display: block; width: 100% !important;}
+    .calendar tr {display: block; width: 100% !important;}
+    .calendar td,
+    .calendar th {display: block; width: 100% !important;}
+
+    .calendar .lesson-time,
+    .calendar .lesson-number,
+    .calendar .lesson,
+    .calendar .teacher,
+    .calendar .grade { float: left; height: 80px; }
+
+    .calendar .lesson-time {width: 20% !important;}
+    .calendar .lesson-number {width: 15% !important;}
+    .calendar .lesson  {width: 45% !important;}
+    .calendar .teacher  {width: 20% !important;}
+    .calendar .grade {width: 20% !important;}
+
+    .js-add { display: block !important; }
+
+    .calendar .header {display: none;}
+    .mobile-title {display: block !important;}
+    
+
+    .start-edit { font-size: 1em; display: inline; }
+    .editor:hover .start-edit {display: inline;}
+    /*.start-edit:hover {width: 100% !important;}*/
+    .chat-users {
+        display: block !important;
+        position: absolute;
+        top: -401px;
+        right: 0;
+        background-color: white;
+        width: 80%;
+    }
+
+    .chat-message {
+        padding: 10px 0px;
+    }
+    .chat-message .message {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .chat-message .message.bg-success {
+        background-color: rgba(193, 255, 151, 0.48) !important;
+    }
+
+
+    table.schedule  {overflow-x: auto;
+        display: block;}
+
+
+    .navbar.affix {position: static;}
+}
+
+
+body.mini-navbar .nav-label, body.mini-navbar .navbar-default .nav li a span {
+    display: initial;
+
+}
+
+body.mini-navbar .navbar-static-side {
+    width: 200px;
+}
+
+body.mini-navbar #page-wrapper {
+    margin: 0 0 0 200px;
+}
+
+@media print {
+    td.danger {
+        background-color: #f2dede !important;
+    }
+
+    td.success {
+        background-color: #dff0d8 !important;
+    }
+
+    td.warning {
+        background-color: #fcf8e3 !important;
+    }
+}

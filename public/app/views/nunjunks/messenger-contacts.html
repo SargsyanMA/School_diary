@@ -1,0 +1,28 @@
+{% for groupId,group in contacts %}
+    <div class="chat-group" >
+        <a data-toggle="collapse" href="#{{ groupId }}" aria-expanded="false" aria-controls="{{ groupId }}" data-id="{{ groupId }}" id="group-{{ groupId }}" {% if group.open %}style="font-weight:bold;"{% endif %} >
+            <span {% if groupId=='001-new' %}style="font-weight:bold;"{% endif %}>{{ group.title }}</span>
+            <!--{% if group.newMessagesCount>0 %}
+                <span class="badge info">{{ group.newMessagesCount }}</span>
+            {% endif %} -->
+        </a>
+    </div>
+    <div class="chat-group-users collapse {% if groupCount==1 or groupId=='001-new' or group.open %}in{% endif %}" id="{{ groupId }}">
+        {% for id, user in group.users %}
+            <div class="chat-user">
+                <div class="chat-avatar center-cropped" style="background-image: url('{{ user.photo | default('/img/blue-user-icon.png',true) }}');"></div>
+                <div class="chat-user-name {% if user.selected %}bg-success{% endif %}">
+                    <a href="#" data-id="{{ user.id }}" data-group-id="{{ groupId }}" id="user-{{ user.id }}"><strong>{{ user.name }}</strong>
+                        {% if user.childName%}<br/><small class="text-muted"><strong>Ребенок:</strong> {{ user.childName|safe }}</small>{% endif %}
+                        {% if user.role!=0 and user.role%}<br/><small class="text-muted">{{ user.role }}</small>{% endif %}
+                    </a>
+                    {% if user.newMessagesCount>0 %}
+                        <span class="badge badge-success">{{ user.newMessagesCount }}</span>
+                    {% endif %}
+                </div>
+            </div>
+        {% else %}
+            <h5>Нет контактов</h5>
+        {% endfor %}
+    </div>
+{% endfor %}

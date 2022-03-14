@@ -1,0 +1,31 @@
+<div class="social-footer comments-{{ event.id }}" >
+    {% for comment in event.comments %}
+        <div class="social-comment" id="comment-{{ comment.id }}">
+            <div class="media-body">
+                <strong>{{ comment.authorName }}</strong> <small class="text-muted">{{ comment.tms }}</small>
+                {%if comment.canEdit %}
+                    <a href="#editcomment" class="text-warning edit-comment" data-comment-id="{{ comment.id }}" data-event-id="{{ event.id }}"><i class="fa fa-pencil" aria-hidden="true"></i> редактировать</a>
+                {% endif %}
+                {%if comment.canDelete %}
+                    <a href="#deletecomment" class="text-danger delete-comment" data-comment-id="{{ comment.id }}"><i class="fa fa-times" aria-hidden="true"></i> удалить</a><br/>
+                {% endif %}
+                <p class="comment-content">{{ comment.text }}</p>
+            </div>
+        </div>
+    {% else %}
+        <a href="#show-comment-form" class="btn btn-default btn-xs btn-outline show-comment-form"><i class="fa fa-comments"></i> комментировать</a>
+    {% endfor %}
+
+
+        <div class="social-comment {% if event.commentsCount == 0 %}hidden{% endif %}" data-event-id="{{ event.id }}">
+            <div class="media-body">
+                <textarea class="form-control comment-text" rows="1" placeholder="Напишите комментарий..."></textarea>
+                <input type="hidden" name="id" value=""  />
+                <div class="comment-buttons hidden">
+                    <button class="btn btn-success btn-sm comment-send" data-event-id="{{ event.id }}">Отправить</button>
+                    <button class="btn btn-default btn-sm btn-outline comment-cancel">Отмена</button>
+                </div>
+            </div>
+        </div>
+
+</div>
